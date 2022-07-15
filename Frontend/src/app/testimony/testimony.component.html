@@ -1,0 +1,36 @@
+<section class="projects-section bg-light text-center">
+    <div class="album py-5 bg-light tstmsection">
+        <div class="container">          
+          <div class="row">
+            <h2 class="text-black mb-4">Testimonials</h2>         
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">                
+                <div class="carousel-inner crslbox">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                    <div class="tsslides col-md-8">                      
+                         
+                        <div *ngFor="let testimony of testimonials; let i = index" class="carousel-item" [ngClass]="{'active':i==0,'':i>0}">                          
+                          "{{testimony.comment}}"
+                          <h5>{{testimony.guest}} - {{testimony.profession}}</h5>
+                        </div> 
+
+                    </div>
+                    <div class="col-md-2"></div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+
+          </div>
+        </div>
+    </div>
+</section> 

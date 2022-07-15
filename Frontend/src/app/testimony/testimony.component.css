@@ -1,0 +1,20 @@
+.crslbox{
+    padding: 50px;
+    background-color: #558985;
+    color: white;
+    border-radius: 25px;
+}
+.tsslides{
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.carousel-item h5{
+    margin-top: 20px;
+}
+.tstmsection{
+    padding-top: 2px !important;   
+}
+.projects-section{
+    padding-top: 2px !important;
+}
